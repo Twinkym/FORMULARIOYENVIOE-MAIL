@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="actividad7.php" method="POST">
+
+    <p class="alumno"> Alumno:<br> <input type="text" name="name" placeholder="Introduzca su nombre" class="nombre" />
+    </p>
+    <h2>Notas de las actividades</h2>
+    <div class="tabla">
+      <div class="fila">
+        <p>Actividad: <input type="text" name="actividades[0] [actividad]" /></p>
+        <p>Fecha: <input type="date" name="actividades[0] [fecha]" /></p>
+        <p>Nota: <input type="number" name="actividades[0] [grado]" min="0" max="10" /></p>
+      </div>
+      <div class="fila">
+        <p>Actividad1: <input type="text" name="actividades[1] [actividad]" /></p>
+        <p>Fecha1 <input type="date" name="actividades[1] [fecha]" /></p>
+        <p>Nota1: <input type="number" name="actividades[1] [grado]" min="0" max="10" /></p>
+      </div>
+      <div class="fila">
+        <p>Atividad2: <input type="text" name="actividades[2] [actividad]" /></p>
+        <p>Fecha2: <input type="date" name="actividades[2] [fecha]" /></p>
+        <p>Nota2: <input type="number" name="actividades[2] [grado]" min="0" max="10" /></p>
+      </div>
+    </div>
+    <br>
+    <div>
+      <h2>Selecciona la nota de la actividad</h2>
+      <select name="nota">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <h2>Selecciona los lenguajes que domina</h2>
+      <input type="checkbox" name="Lenguajes[ ]" value="HTML">HTML
+      <input type="checkbox" name="Lenguajes[ ]" value="JAVASCRIPT">JAVASCRIPT
+      <input type="checkbox" name="Lenguajes[ ]" value="CSS">CSS
+      <input type="checkbox" name="Lenguajes[ ]" value="JAVA">JAVA
+    </div>
+    <br>
+    <input type="submit" value="Enviar">
+
+  </form>
+</body>
+
+</html>

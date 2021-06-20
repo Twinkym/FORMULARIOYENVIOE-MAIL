@@ -1,0 +1,24 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+.fila p {
+  display: inline-block;
+}
+.fila p:first-child {
+  width: 200px;
+}
+.fila p:nth-child() {
+  width: 140px;
+}
+.fila p:nth-child(2) {
+  width: 60px;
+}
+input[type="number"] {
+  width: 60px;
+}
